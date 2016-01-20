@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+
+    <com.wowwee.snappetssampleproject.ui.SplashBgImageView
+        android:id="@+id/img_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_gravity="bottom|right"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:tag="auto_scale" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_header_height"
+            android:background="@color/grey_color"
+            android:tag="auto_scale">
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/btn_back"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:paddingRight="65dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:src="@drawable/back" />-->
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/menu"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/setting_btn_back_text_size" />
+
+            <com.qwerjk.better_text.MagicTextView
+                android:id="@+id/txt_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/options"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/setting_title_text_size"
+                app:typeface="swanse_bold.ttf" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/row_general_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.qwerjk.better_text.MagicTextView
+                        android:id="@+id/updateInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="40dp"
+                        android:paddingTop="4dp"
+                        android:text="test 1.09_08_835"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/setting_rowtitle_text_size"
+                        app:typeface="swanse_bold.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_grey_color"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/grey_color" />
+
+                    <LinearLayout
+                        android:id="@+id/row_general_reset"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/dark_grey_color"
+                        android:orientation="vertical">
+
+                        <com.qwerjk.better_text.MagicTextView
+                            android:id="@+id/reset"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="40dp"
+                            android:paddingTop="4dp"
+                            android:text="@string/reset"
+                            android:textColor="@color/white_color"
+                            android:textSize="@dimen/setting_rowtitle_text_size"
+                            app:typeface="swanse_bold.ttf" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_customization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_grey_color"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="@color/grey_color" />
+
+                    <com.qwerjk.better_text.MagicTextView
+                        android:id="@+id/snapPetName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="40dp"
+                        android:paddingTop="4dp"
+                        android:text="@string/snappet_name"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/setting_rowtitle_text_size"
+                        app:typeface="swanse_bold.ttf" />
+
+                    <LinearLayout
+                        android:id="@+id/row_pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.qwerjk.better_text.MagicTextView
+                            android:id="@+id/snapPetPIN"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="40dp"
+                            android:paddingTop="4dp"
+                            android:text="@string/snappet_pin"
+                            android:textColor="@color/white_color"
+                            android:textSize="@dimen/setting_rowtitle_text_size"
+                            app:typeface="swanse_bold.ttf" />
+
+                        <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="3dp"-->
+                        <!--android:layout_marginLeft="40dp"-->
+                        <!--android:background="@color/mainPurpleBgColor" />-->
+
+                        <!--<com.qwerjk.better_text.MagicTextView-->
+                        <!--android:id="@+id/colorTheme"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:paddingBottom="2dp"-->
+                        <!--android:paddingLeft="40dp"-->
+                        <!--android:paddingTop="4dp"-->
+                        <!--android:text="@string/Color_Theme"-->
+                        <!--android:textColor="@color/settingsRowTextColor"-->
+                        <!--android:textSize="20dp"-->
+                        <!--app:typeface="swanse_bold.ttf" />-->
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_grey_color"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="@color/grey_color" />
+
+                    <com.qwerjk.better_text.MagicTextView
+                        android:id="@+id/btn_disconnect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="40dp"
+                        android:paddingTop="4dp"
+                        android:text="@string/disconnect"
+                        android:textColor="@color/white_color"
+                        android:textSize="@dimen/setting_rowtitle_text_size"
+                        app:typeface="swanse_bold.ttf" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/grey_color" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

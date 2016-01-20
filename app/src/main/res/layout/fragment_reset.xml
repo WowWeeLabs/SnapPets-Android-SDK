@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+
+    <com.wowwee.snappetssampleproject.ui.SplashBgImageView
+        android:id="@+id/img_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:tag="auto_scale" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_header_height"
+        android:background="@color/grey_color"
+        android:tag="auto_scale">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/back" />
+
+        <com.qwerjk.better_text.MagicTextView
+            android:id="@+id/reset_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/general"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/setting_title_text_size"
+            app:typeface="swanse_bold.ttf" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="506dp"
+        android:layout_below="@+id/relativeLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.qwerjk.better_text.MagicTextView
+                android:id="@+id/txt_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/reset"
+                android:textColor="@color/grey_color"
+                android:textSize="@dimen/setting_subtitle_text_size"
+                app:typeface="swanse_bold.ttf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="3dp"-->
+                <!--android:background="@color/SettingsDividerColor" />-->
+
+                <!--<com.qwerjk.better_text.MagicTextView-->
+                <!--android:id="@+id/resetAllSettings"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/SettingsRowBG"-->
+                <!--android:paddingBottom="2dp"-->
+                <!--android:paddingLeft="40dp"-->
+                <!--android:paddingTop="4dp"-->
+                <!--android:text="@string/Reset_All_Settings"-->
+                <!--android:textColor="@color/settingsRowTextColor"-->
+                <!--android:textSize="20dp"-->
+                <!--app:typeface="swanse_bold.ttf" />-->
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="3dp"-->
+                <!--android:background="@color/SettingsDividerColor" />-->
+
+                <!--<com.qwerjk.better_text.MagicTextView-->
+                <!--android:id="@+id/empty"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingBottom="2dp"-->
+                <!--android:paddingLeft="40dp"-->
+                <!--android:paddingTop="4dp"-->
+                <!--android:text="@string/Language"-->
+                <!--android:textColor="@color/settingsRowTextColor"-->
+                <!--android:textSize="20dp"-->
+                <!--android:visibility="invisible"-->
+                <!--app:typeface="swanse_bold.ttf" />-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/dark_grey_color" />
+
+                <com.qwerjk.better_text.MagicTextView
+                    android:id="@+id/resetSnapPet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_grey_color"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="4dp"
+                    android:text="@string/reset_snappet"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/setting_rowtitle_text_size"
+                    app:typeface="swanse_bold.ttf" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/dark_grey_color" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/confirmResetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/confirmResetButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/reset_button_bg"
+            android:orientation="vertical">
+
+            <com.qwerjk.better_text.MagicTextView
+                android:id="@+id/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="@string/reset_press_button_on_top_of_snappet"
+                android:textColor="@color/white_color"
+                android:textSize="12dp"
+                app:typeface="swanse_bold.ttf" />
+
+            <com.qwerjk.better_text.MagicTextView
+                android:id="@+id/resetText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="center"
+                android:text="@string/reset"
+                android:textColor="@color/delete_button_text_color"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                app:typeface="swanse_bold.ttf" />
+        </LinearLayout>
+
+        <com.qwerjk.better_text.MagicTextView
+            android:id="@+id/cancelReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/reset_button_bg"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/white_color"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            app:typeface="swanse_bold.ttf" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

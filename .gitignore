@@ -1,0 +1,19 @@
+syntax: glob
+.git/
+kit-libs/
+app/build/
+mTPhotoSortrDemo/build/
+mTController/build/
+coolview/build/
+mTPhotoSortrDemo/build/intermediates/
+build/intermediates/
+
+snappets-android.iml
+app/app.iml
+
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gallery_header_logo_width">240dp</dimen>
+    <dimen name="gallery_header_text_size">32sp</dimen>
+    <dimen name="camera_control_side_button_padding">0dp</dimen>
+    <dimen name="camera_control_center_button_padding">0dp</dimen>
+    <dimen name="settings_button_size">56dp</dimen>
+
+    <dimen name="popup_width">465dp</dimen>
+    <dimen name="popup_height">500dp</dimen>
+
+    <dimen name="loading_images_from_snappet_margin_top">10dp</dimen>
+    <dimen name="loading_images_from_snappet_text_size">30dp</dimen>
+
+    <dimen name="use_snappet_or_phone_image_size">500dp</dimen>
+    <dimen name="use_me_left_margin">10dp</dimen>
+    <dimen name="use_me_or_me_top_margin">64dp</dimen>
+    <dimen name="or_me_right_margin">4dp</dimen>
+    <dimen name="to_snap_right_margin">20dp</dimen>
+    <dimen name="to_snap_top_margin">0dp</dimen>
+    <dimen name="use_me_to_snap_or_me_text_size">22sp</dimen>
+    <dimen name="use_me_to_snap_or_me_width">120sp</dimen>
+    <dimen name="use_me_to_snap_or_me_height">60sp</dimen>
+    <dimen name="snap_me_width">200sp</dimen>
+    <dimen name="countdown_text_size">60dp</dimen>
+    <dimen name="countdown_padding_left">90dp</dimen>
+
+    <dimen name="setting_btn_back_text_size">23dp</dimen>
+    <dimen name="setting_title_text_size">54dp</dimen>
+    <dimen name="setting_subtitle_text_size">42dp</dimen>
+    <dimen name="setting_rowtitle_text_size">30dp</dimen>
+    <dimen name="setting_rowvalue_text_size">21dp</dimen>
+</resources>

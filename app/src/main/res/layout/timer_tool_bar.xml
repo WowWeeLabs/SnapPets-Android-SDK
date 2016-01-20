@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="@color/camera_tool_bg">
+
+    <com.qwerjk.better_text.MagicTextView
+        android:id="@+id/takePicIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="3dp"
+        android:text="@string/take_a_picture_in"
+        android:textColor="@color/white_color"
+        android:textSize="11sp"
+        app:typeface="swanse_bold.ttf" />
+
+
+    <ImageView
+        android:id="@+id/close_timer_bar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="4dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/close" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/takePicIn"
+        android:layout_toStartOf="@+id/close_timer_bar"
+        android:orientation="horizontal">
+
+        <com.qwerjk.better_text.MagicTextView
+            android:id="@+id/sec3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/takePicIn"
+            android:layout_weight="1"
+            android:text="@string/sec3"
+            android:textColor="@color/white_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:typeface="swanse_bold.ttf" />
+
+        <com.qwerjk.better_text.MagicTextView
+            android:id="@+id/sec7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@+id/sec3"
+            android:layout_weight="1"
+            android:text="@string/sec7"
+            android:textColor="@color/white_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:typeface="swanse_bold.ttf" />
+
+        <com.qwerjk.better_text.MagicTextView
+            android:id="@+id/sec10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/sec7"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@+id/sec7"
+            android:layout_weight="1"
+            android:text="@string/sec10"
+            android:textColor="@color/white_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:typeface="swanse_bold.ttf" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popup_screen_fill">
+
+    <RelativeLayout
+        android:id="@+id/checkPinLayout"
+        style="@style/popup_rounded_background">
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/popup_refresh_button"
+            android:text="Back"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_close"
+            style="@style/popup_close_button"
+            android:text="@string/close"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <com.qwerjk.better_text.MagicTextView
+                android:id="@+id/pet_name"
+                style="@style/popup_text"
+                android:layout_gravity="center_horizontal"
+                android:text="TEST"
+                android:textSize="32dp"
+                app:typeface="swanse_bold.ttf" />
+
+            <com.qwerjk.better_text.MagicTextView
+                android:id="@+id/snap_pet_sub_title"
+                style="@style/popup_text"
+                android:layout_gravity="center"
+                android:layout_marginTop="-4dp"
+                android:text="@string/snappet_pin"
+                android:textSize="32dp"
+                app:typeface="swanse_bold.ttf" />
+
+            <com.qwerjk.better_text.MagicTextView
+                android:id="@+id/pin_sub_title"
+                style="@style/popup_text"
+                android:layout_gravity="center"
+                android:text="@string/please_enter_pin_to_connect"
+                android:textSize="10sp"
+                app:typeface="swanse_bold.ttf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inputForm"
+            style="@style/popup_inputFormLayout"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/edit_pin"
+                style="@style/popup_input_form_edit_text"
+                android:inputType="number" />
+
+            <com.qwerjk.better_text.MagicTextView
+                android:id="@+id/invalidPin"
+                style="@style/popup_text"
+                android:layout_gravity="bottom"
+                android:text="@string/invalid_pin"
+                android:textSize="28sp"
+                android:visibility="gone"
+                app:typeface="swanse_bold.ttf" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_ok"
+            style="@style/popup_ok_button"
+            android:text="@string/popup_ok"/>
+    </RelativeLayout>
+</RelativeLayout>

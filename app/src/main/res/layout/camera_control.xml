@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_camera_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        style="@style/camera_control_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_photoalbum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="@dimen/camera_control_side_button_padding"
+            android:text="Album"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        style="@style/camera_control_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_snap"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="@dimen/camera_control_center_button_padding"
+            android:text="Shutter" />
+
+        <Button
+            android:id="@+id/btn_cam_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="@dimen/camera_control_center_button_padding"
+            android:text="Cancel"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        style="@style/camera_control_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_cammode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="@dimen/camera_control_side_button_padding"
+            android:text="@string/switch_mode" />
+    </FrameLayout>
+
+</LinearLayout>

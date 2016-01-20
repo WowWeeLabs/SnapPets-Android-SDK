@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/headerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@color/dark_grey_color">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@+id/imageView"
+        android:gravity="center"
+        android:text="@string/menu"
+        android:textSize="@dimen/gallery_header_text_size" />
+
+    <com.qwerjk.better_text.MagicTextView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/gallery_header_text_size"
+        app:typeface="swanse_bold.ttf" />
+
+    <com.qwerjk.better_text.MagicTextView
+        android:id="@+id/btn_right"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:gravity="center_vertical|right"
+        android:text="@string/select"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/gallery_header_text_size"
+        app:typeface="swanse_bold.ttf" />
+
+    <LinearLayout
+        android:id="@+id/downloadedPictures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="4dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.qwerjk.better_text.MagicTextView
+            android:id="@+id/downloadedCountTV"
+            style="@style/popup_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            app:typeface="swanse_bold.ttf" />
+
+        <FrameLayout
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal">
+
+            <com.wowwee.snappetssampleproject.ui.CircleView
+                android:id="@+id/circleLoading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

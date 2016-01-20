@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/popup_rounded_background">
+
+    <com.qwerjk.better_text.MagicTextView
+        android:id="@+id/cannotdetectsnappet_desc"
+        style="@style/popup_text"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|left"
+        android:lines="2"
+        android:singleLine="false"
+        android:tag="auto_scale"
+        android:text="@string/dont_detect_snappet_closeby"
+        android:textColor="@color/dark_grey_color"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:typeface="FontesqueSansPro.otf" />
+
+    <com.qwerjk.better_text.MagicTextView
+        android:id="@+id/buySnapPet"
+        style="@style/popup_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cannotdetectsnappet_desc"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:text="@string/buy_a_snappet"
+        android:textColor="@color/dark_grey_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.qwerjk.better_text.MagicTextView
+        android:id="@+id/snapPetLogo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/buySnapPet"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Snap\n     Pet"
+        android:textColor="@color/grey_color"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_popup_buy_close"
+        style="@style/popup_close_button"
+        android:text="@string/close"/>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    defaultConfig {
+        applicationId "com.wowwee.snappetssampleproject"
+        minSdkVersion 19
+        targetSdkVersion 21
+
+        versionCode 10
+        versionName "1.0.4"
+
+        resValue "bool", "is_debug", "true"
+        resValue "integer", "days_before_rate", "1"
+        resValue "integer", "photos_before_rate", "5"
+    }
+    buildTypes {
+        debug {
+            resValue "bool", "is_debug", "true"
+            resValue "integer", "days_before_rate", "1"
+            resValue "integer", "photos_before_rate", "5"
+        }
+        release {
+            resValue "bool", "is_debug", "false"
+            resValue "integer", "days_before_rate", "14"
+            resValue "integer", "photos_before_rate", "100"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile files('libs/bluetoothrobotcontrollib.jar')
+}

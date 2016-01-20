@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/searchLayout"
+    style="@style/popup_rounded_background"
+    android:visibility="visible">
+
+    <Button
+        android:id="@+id/btn_popup_refresh"
+        style="@style/popup_refresh_button"
+        android:text="Refresh"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="36dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <com.qwerjk.better_text.MagicTextView
+                android:id="@+id/txt_title"
+                style="@style/popup_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/searching_for"
+                android:textColor="@color/dark_grey_color"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title"
+                android:gravity="center_horizontal">
+
+                <com.qwerjk.better_text.MagicTextView
+                    android:id="@+id/yourText"
+                    style="@style/popup_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your"
+                    android:textColor="@color/dark_grey_color"
+                    android:textSize="28sp" />
+
+                <com.qwerjk.better_text.MagicTextView
+                    android:id="@+id/snappet"
+                    style="@style/popup_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" SnapPets"
+                    android:textColor="@color/grey_color"
+                    android:textSize="32sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/grid_snappet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-10dp"
+            android:layout_weight="1"
+            android:numColumns="1"
+            android:overScrollMode="never"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scrollingCache="true"
+            android:tag="auto_scale"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_popup_close"
+        style="@style/popup_close_button"
+        android:text="@string/close"/>
+</RelativeLayout>

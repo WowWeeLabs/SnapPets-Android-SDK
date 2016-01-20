@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="@color/camera_tool_bg"
+    android:orientation="horizontal"
+
+    android:visibility="visible">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_flash"
+            style="@style/camera_tool"
+            android:text="Flash" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_timer"
+            style="@style/camera_tool"
+            android:text="Timer" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0">
+
+        <Button
+            android:id="@+id/btn_pic_every_time"
+            style="@style/camera_tool"
+            android:text="Time pic" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_camswitch"
+            style="@style/camera_tool"
+            android:text="Switch" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey_color"
+    android:fitsSystemWindows="true"
+
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/camera_fragment_header"
+        layout="@layout/main_screen_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.wowwee.snappetssampleproject.ui.FitWidthSquareRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="top">
+
+        <RelativeLayout
+            android:id="@+id/layout_camera_xxx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/img_camera_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/theme_color"
+            android:tag="auto_scale"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/snapPhoneLayout"
+            layout="@layout/connected_pet_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <com.qwerjk.better_text.MagicTextView
+            android:id="@+id/txt_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="8dp"
+            android:text=""
+            android:textColor="@color/grey_color"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:typeface="swanse_bold.ttf" />
+
+        <include
+            android:id="@+id/layout_loading"
+            layout="@layout/loading_images_from_pet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="40dp"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout_camera_tool"
+            layout="@layout/camera_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <include
+            android:id="@+id/layout_every_time_tool"
+            layout="@layout/every_time_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout_timer_tool"
+            layout="@layout/timer_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/layout_image_tool"
+            layout="@layout/image_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+    </com.wowwee.snappetssampleproject.ui.FitWidthSquareRelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <include
+            layout="@layout/camera_control"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+    </FrameLayout>
+
+
+</LinearLayout>

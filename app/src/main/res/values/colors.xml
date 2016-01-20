@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="grey_color">#888888</color>
+    <color name="dark_grey_color">#2e2e2e</color>
+    <color name="pet1">#2BD3C6</color>
+    <color name="pet2">#FF855D</color>
+    <color name="pet3">#E0387F</color>
+    <color name="pet4">#252A7C</color>
+    <color name="popup_screen_fill">#a0000000</color>
+    <color name="delete_button_text_color">#FF0066</color>
+    <item name="theme_color" type="color">@color/dark_grey_color</item>
+    <item name="camera_tool_bg" type="color">@color/dark_grey_color</item>
+    <item name="progress_bg" type="color">@color/dark_grey_color</item>
+</resources>

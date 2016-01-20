@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/popup_screen_fill">
+
+    <RelativeLayout
+        android:id="@+id/setupNameLayout"
+        style="@style/popup_rounded_background">
+
+        <com.qwerjk.better_text.MagicTextView
+            android:id="@+id/txt_title"
+            style="@style/popup_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="@string/name_me"
+            android:textSize="32sp"
+            app:typeface="swanse_bold.ttf" />
+
+        <LinearLayout
+            android:id="@+id/inputForm"
+            style="@style/popup_inputFormLayout"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/edit_name"
+                style="@style/popup_input_form_edit_text" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_popup_next"
+            style="@style/popup_ok_button"
+            android:text="@string/popup_ok"/>
+    </RelativeLayout>
+</RelativeLayout>

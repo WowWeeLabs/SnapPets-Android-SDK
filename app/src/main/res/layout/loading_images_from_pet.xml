@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_color"
+    android:orientation="vertical">
+
+
+    <com.qwerjk.better_text.MagicTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="@dimen/loading_images_from_snappet_margin_top"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="5dp"
+        android:lines="2"
+        android:singleLine="false"
+        android:text="@string/loading_images_from_snappet"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/loading_images_from_snappet_text_size"
+        app:typeface="swanse_bold.ttf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:tag="auto_scale" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_loading"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:background="@color/progress_bg"
+        android:max="100"
+        android:progress="50" />
+</FrameLayout>
